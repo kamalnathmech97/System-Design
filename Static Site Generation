@@ -1,0 +1,53 @@
+Static Site Generation (SSG)
+Short Summary:
+
+Generates all pages at build time.
+Produces static HTML files for fast serving.
+Details:
+
+Pros:
+Performance: Fast load times due to pre-built static files.
+Security: Reduced attack surface as no server-side processing is involved.
+Cost: Cheaper hosting since static files can be served from CDNs.
+
+Cons:
+Build Time: Long build times for large sites.
+Content Freshness: Requires full rebuilds for content updates.
+Scalability: Frequent updates can make build times impractical.
+
+Ideal Use Cases:
+Sites with infrequent updates.
+Marketing pages, documentation sites.
+Projects needing fast initial loads and low maintenance.
+
+Tools:
+Next.js
+Gatsby
+Jekyll
+
+
+Incremental Static Regeneration (ISR)
+
+Allows static pages to be incrementally regenerated after the initial build.
+Combines static generation with on-demand updates.
+Details:
+
+Pros:
+
+Hybrid Performance: Mixes the speed of SSG with SSR's flexibility.
+Content Freshness: Pages update at specified intervals without full rebuilds.
+Scalability: Efficiently handles frequent updates.
+
+Cons:
+
+Complexity: More setup and management required.
+Cache Invalidation: Managing and updating stale content is challenging.
+Server Requirements: Needs some server-side logic for page regeneration.
+Ideal Use Cases:
+
+Frequently updated sites.
+E-commerce, blogs, news sites.
+Projects needing balance between performance and content freshness.
+
+Tools:
+Next.js
