@@ -1,0 +1,12 @@
+Single-Page Application (SPA) with Client-Side Rendering (CSR) :
+
+Rendering: Most of the rendering happens on the client side after the initial page load.
+User Experience: Provides a more fluid and interactive user experience similar to a desktop application.
+Navigation: Uses JavaScript to dynamically load and update content without refreshing the entire page.
+
+
+Multi-Page Application (MPA) with Server-Side Rendering (SSR) :
+
+Rendering: Each page is rendered on the server and sent to the client fully formed.
+User Experience: More traditional web experience with full page reloads for each navigation.
+Navigation: Each navigation request results in a new HTML page being fetched from the server.
