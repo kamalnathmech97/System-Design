@@ -1,0 +1,18 @@
+Minimize Critical Resources:
+Reduce the number and size of CSS and JavaScript files. This can be achieved by minifying files, 
+eliminating unnecessary resources, and using tools like Webpack to bundle assets efficiently.
+
+Defer Non-Critical Resources:
+Use the async and defer attributes for non-critical JavaScript. This allows the browser to continue parsing the HTML 
+and constructing the DOM while the scripts are being downloaded.
+
+Inline Critical CSS:
+Inline the CSS required for the above-the-fold content directly in the HTML document. This reduces the time 
+needed to construct the CSSOM.
+
+Lazy Loading:
+Defer loading images and other non-essential resources until they are needed, improving the initial load time.
+
+Reduce Render-Blocking Resources:
+Ensure that the critical resources needed to render the initial view of the page are loaded as quickly as possible. 
+Move non-critical CSS and JavaScript out of the critical path.
