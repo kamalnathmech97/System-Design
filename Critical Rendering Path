@@ -1,0 +1,21 @@
+The Critical Rendering Path is the sequence of steps the browser goes through to convert the HTML, CSS, 
+and JavaScript into pixels on the screen.
+
+Document Object Model (DOM) Construction:
+The browser parses the HTML to construct the DOM tree, which represents the document's structure and content.
+
+CSS Object Model (CSSOM) Construction:
+Simultaneously, the browser parses the CSS files to construct the CSSOM tree, which represents the styles 
+applied to the document.
+
+Render Tree Construction:
+The browser combines the DOM and CSSOM trees to create the render tree. The render tree contains only the 
+nodes required to render the content on the screen, including styling information.
+
+Layout (Reflow):
+
+The browser calculates the position and size of each node in the render tree. 
+This step is known as layout or reflow. It determines the exact placement of elements on the page.
+
+Painting:
+The browser paints the render tree to the screen, converting the nodes into actual pixels.
